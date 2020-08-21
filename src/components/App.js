@@ -3,6 +3,7 @@ import { useState } from "../context";
 import ToDoForm from "./ToDoForm";
 import List from "./List";
 import ListItems from "./ListItems";
+import Progress from "./Progress";
 
 function App() {
   const { toDos, completed } = useState();
@@ -11,6 +12,8 @@ function App() {
     <>
       <h1>be productive</h1>
       <ToDoForm />
+
+      <Progress />
       <List title={toDos.length > 0 ? "To Dos" : ""}>
         {toDos.map((toDo) => (
           <ListItems key={toDo.id} id={toDo.id} text={toDo.text} />
