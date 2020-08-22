@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/minapark127/be_productive/static/js/main.8b6c0ccb.chunk.js",
-    "main.js.map": "/minapark127/be_productive/static/js/main.8b6c0ccb.chunk.js.map",
-    "runtime-main.js": "/minapark127/be_productive/static/js/runtime-main.2eec6409.js",
-    "runtime-main.js.map": "/minapark127/be_productive/static/js/runtime-main.2eec6409.js.map",
-    "static/js/2.4a5b6725.chunk.js": "/minapark127/be_productive/static/js/2.4a5b6725.chunk.js",
-    "static/js/2.4a5b6725.chunk.js.map": "/minapark127/be_productive/static/js/2.4a5b6725.chunk.js.map",
-    "index.html": "/minapark127/be_productive/index.html",
-    "precache-manifest.8db93f2e942952fef83a039ef114a686.js": "/minapark127/be_productive/precache-manifest.8db93f2e942952fef83a039ef114a686.js",
-    "service-worker.js": "/minapark127/be_productive/service-worker.js",
-    "static/js/2.4a5b6725.chunk.js.LICENSE.txt": "/minapark127/be_productive/static/js/2.4a5b6725.chunk.js.LICENSE.txt"
+    "main.js": "/be_productive/static/js/main.8b6c0ccb.chunk.js",
+    "main.js.map": "/be_productive/static/js/main.8b6c0ccb.chunk.js.map",
+    "runtime-main.js": "/be_productive/static/js/runtime-main.a64a96a4.js",
+    "runtime-main.js.map": "/be_productive/static/js/runtime-main.a64a96a4.js.map",
+    "static/js/2.4a5b6725.chunk.js": "/be_productive/static/js/2.4a5b6725.chunk.js",
+    "static/js/2.4a5b6725.chunk.js.map": "/be_productive/static/js/2.4a5b6725.chunk.js.map",
+    "index.html": "/be_productive/index.html",
+    "precache-manifest.fe31bd6e6ade8f2ff17444883c4a03e0.js": "/be_productive/precache-manifest.fe31bd6e6ade8f2ff17444883c4a03e0.js",
+    "service-worker.js": "/be_productive/service-worker.js",
+    "static/js/2.4a5b6725.chunk.js.LICENSE.txt": "/be_productive/static/js/2.4a5b6725.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.2eec6409.js",
+    "static/js/runtime-main.a64a96a4.js",
     "static/js/2.4a5b6725.chunk.js",
     "static/js/main.8b6c0ccb.chunk.js"
   ]
