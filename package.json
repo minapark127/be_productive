@@ -20,7 +20,7 @@
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },
-  "homepage": "https://github.com/minapark127/be_productive/",
+  "homepage": "https://minapark127.github.io/be_productive/",
   "eslintConfig": {
     "extends": "react-app"
   },
