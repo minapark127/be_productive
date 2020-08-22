@@ -11,10 +11,10 @@ const Li = styled.li`
 `;
 
 const Dot = styled.span`
-color: #86d3dd;
-font-size: 10px;
-    margin-right: 10px;
-}`;
+  color: #86d3dd;
+  font-size: 10px;
+  margin-right: 10px;
+`;
 
 const Todo = styled.input`
   all: unset;
