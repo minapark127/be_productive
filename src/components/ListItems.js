@@ -2,6 +2,51 @@ import React, { useState } from "react";
 import { DEL, COMPLETE, UNCOMPLETE, EDIT } from "../actions";
 import Svgs from "./Svgs";
 import { useDispatch } from "../context";
+import styled from "@emotion/styled";
+
+const Li = styled.li`
+  display: flex;
+  padding-left: 10px;
+  margin-bottom: 5px;
+`;
+
+const Dot = styled.span`
+color: #86d3dd;
+font-size: 10px;
+    margin-right: 10px;
+}`;
+
+const Todo = styled.input`
+  all: unset;
+  padding: 5px 0;
+`;
+const Completed = styled.input`
+  all: unset;
+  padding: 5px 0;
+  text-decoration: line-through;
+  color: rgba(127, 140, 141, 0.8);
+`;
+
+const Button = styled.button`
+  all: unset;
+  margin-left: 10px;
+  cursor: pointer;
+  :hover {
+    svg {
+      stroke-width: 1.5px;
+    }
+  }
+`;
+const ButtonBack = styled.button`
+  all: unset;
+  margin-left: 65px;
+  cursor: pointer;
+  :hover {
+    svg {
+      stroke-width: 1.5px;
+    }
+  }
+`;
 
 export default ({ id, text, isCompleted }) => {
   const [editedToDo, setEditedToDo] = useState(text);
@@ -45,30 +90,42 @@ export default ({ id, text, isCompleted }) => {
 
   return (
     <>
-      <li key={id}>
+      <Li key={id}>
         <form onSubmit={onSubmit}>
-          <input type="text" value={editedToDo} onChange={onChange} disabled />
+          <Dot>●</Dot>
+          {!isCompleted ? (
+            <Todo type="text" value={editedToDo} onChange={onChange} disabled />
+          ) : (
+            <Completed
+              type="text"
+              value={editedToDo}
+              onChange={onChange}
+              disabled
+            />
+          )}
         </form>
         {!isCompleted ? (
           <>
-            <button onClick={editHandler}>
+            <Button onClick={editHandler}>
               <Svgs.Edit />
-            </button>
-            <button onClick={() => dispatch({ type: DEL, payload: id })}>
+            </Button>
+            <Button onClick={() => dispatch({ type: DEL, payload: id })}>
               <Svgs.Delete />
-            </button>
-            <button onClick={() => dispatch({ type: COMPLETE, payload: id })}>
+            </Button>
+            <Button onClick={() => dispatch({ type: COMPLETE, payload: id })}>
               <Svgs.Check />
-            </button>
+            </Button>
           </>
         ) : (
           <>
-            <button onClick={() => dispatch({ type: UNCOMPLETE, payload: id })}>
+            <ButtonBack
+              onClick={() => dispatch({ type: UNCOMPLETE, payload: id })}
+            >
               <Svgs.Back />
-            </button>
+            </ButtonBack>
           </>
         )}
-      </li>
+      </Li>
     </>
   );
 };
